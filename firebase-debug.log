@@ -1,18 +1,18 @@
-[debug] [2025-09-14T04:51:10.401Z] ----------------------------------------------------------------------
-[debug] [2025-09-14T04:51:10.404Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /nix/store/wma3rvxxva78rqvnpja82nx5b3mclpxg-firebase-tools-14.15.2/lib/node_modules/firebase-tools/lib/bin/firebase.js init hosting
-[debug] [2025-09-14T04:51:10.405Z] CLI Version:   14.15.2
-[debug] [2025-09-14T04:51:10.405Z] Platform:      linux
-[debug] [2025-09-14T04:51:10.405Z] Node Version:  v20.19.1
-[debug] [2025-09-14T04:51:10.405Z] Time:          Sun Sep 14 2025 04:51:10 GMT+0000 (Coordinated Universal Time)
-[debug] [2025-09-14T04:51:10.406Z] ----------------------------------------------------------------------
+[debug] [2025-09-14T05:36:33.768Z] ----------------------------------------------------------------------
+[debug] [2025-09-14T05:36:33.771Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /nix/store/wma3rvxxva78rqvnpja82nx5b3mclpxg-firebase-tools-14.15.2/lib/node_modules/firebase-tools/lib/bin/firebase.js init hosting
+[debug] [2025-09-14T05:36:33.772Z] CLI Version:   14.15.2
+[debug] [2025-09-14T05:36:33.772Z] Platform:      linux
+[debug] [2025-09-14T05:36:33.772Z] Node Version:  v20.19.1
+[debug] [2025-09-14T05:36:33.773Z] Time:          Sun Sep 14 2025 05:36:33 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-09-14T05:36:33.773Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2025-09-14T04:51:10.412Z] Checked if tokens are valid: true, expires at: 1757829048211
-[debug] [2025-09-14T04:51:10.412Z] Checked if tokens are valid: true, expires at: 1757829048211
-[debug] [2025-09-14T04:51:10.417Z] >>> [apiv2][query] GET https://monospace-pa.googleapis.com/v1/workspaces/glc-mechanics-html-63493161 [none]
-[debug] [2025-09-14T04:51:11.223Z] <<< [apiv2][status] GET https://monospace-pa.googleapis.com/v1/workspaces/glc-mechanics-html-63493161 200
-[debug] [2025-09-14T04:51:11.224Z] <<< [apiv2][body] GET https://monospace-pa.googleapis.com/v1/workspaces/glc-mechanics-html-63493161 {"workspaceId":"glc-mechanics-html-63493161","name":"GLC Mechanics html","workspaceRedirectUrl":"firebase-glc-mechanics-html-1757825284107.cluster-mdgxqvvkkbfpqrfigfiuugu5pk.cloudworkstations.dev","status":"WORKSPACE_STATUS_RUNNING","lastAccessDatetime":"2025-09-14T04:48:40.907992Z","workspaceTemplate":"WORKSPACE_TEMPLATE_BLANK_WEB","owner":"SELF","serviceAccountEmail":"msp-6607683673816202750@monospace-per-ws-sa-3.iam.gserviceaccount.com","enableNix":true,"ownerEmail":"coutinho.gui@gmail.com","workspaceImageUrl":"https://www.gstatic.com/monospace/231115/logo_html.svg","templateArgs":"{\"__agentic_workspace\":true}","templateRepoUrl":"file:///usr/local/monospace/templates/public/blank-web","workstationAccessToken":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2Nsb3VkLmdvb2dsZS5jb20vd29ya3N0YXRpb25zIiwiYXVkIjoiZmlyZWJhc2UtZ2xjLW1lY2hhbmljcy1odG1sLTE3NTc4MjUyODQxMDcuY2x1c3Rlci1tZGd4cXZ2a2tiZnBxcmZpZ2ZpdXVndTVway5jbG91ZHdvcmtzdGF0aW9ucy5kZXYiLCJpYXQiOjE3NTc4MjU0NzEsImV4cCI6MTc1NzkxMTg3MH0.YQUnWCSnX8DE37YvE1jRZkTw2X8wFMeM13UNcN7H5tJ5je3z39jt8BGy5uOb35URfLJ_qwkrXzQumxam5zX8tRQSzIDW4f9p_W97Vcc8WgzOmz1O4aPQGU_ph43HW_oHNioZk4sHNB208H836mzBAzh8Y84JiBYvx18MQGvYBU9MpwPE7SOyV47Mkj1yCD7dmqxa8HTc0Eni9tVtan7oa-pqvhVGtUrlnJ7p3sqaPjdmPhTAoxD7uTWzfT4VBvChEaZKU4O2cmxjmXaZEeDBmJLsaoedIBxxhCdBLz1bn_ODRWgDt3H1cZ64HKOUdQ5kQOpV-G6xQcV_o3ZhPTqJ6w"}
-[debug] [2025-09-14T04:51:11.225Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
-[debug] [2025-09-14T04:51:11.226Z] > authorizing via signed-in user (coutinho.gui@gmail.com)
+[debug] [2025-09-14T05:36:33.780Z] Checked if tokens are valid: true, expires at: 1757831787827
+[debug] [2025-09-14T05:36:33.781Z] Checked if tokens are valid: true, expires at: 1757831787827
+[debug] [2025-09-14T05:36:33.788Z] >>> [apiv2][query] GET https://monospace-pa.googleapis.com/v1/workspaces/glc-mechanics-html-63493161 [none]
+[debug] [2025-09-14T05:36:34.595Z] <<< [apiv2][status] GET https://monospace-pa.googleapis.com/v1/workspaces/glc-mechanics-html-63493161 200
+[debug] [2025-09-14T05:36:34.596Z] <<< [apiv2][body] GET https://monospace-pa.googleapis.com/v1/workspaces/glc-mechanics-html-63493161 {"workspaceId":"glc-mechanics-html-63493161","name":"GLC Mechanics html","workspaceRedirectUrl":"firebase-glc-mechanics-html-1757825284107.cluster-mdgxqvvkkbfpqrfigfiuugu5pk.cloudworkstations.dev","status":"WORKSPACE_STATUS_RUNNING","lastAccessDatetime":"2025-09-14T04:48:40.907992Z","workspaceTemplate":"WORKSPACE_TEMPLATE_BLANK_WEB","owner":"SELF","serviceAccountEmail":"msp-6607683673816202750@monospace-per-ws-sa-3.iam.gserviceaccount.com","enableNix":true,"ownerEmail":"coutinho.gui@gmail.com","workspaceImageUrl":"https://www.gstatic.com/monospace/231115/logo_html.svg","templateArgs":"{\"__agentic_workspace\":true}","templateRepoUrl":"file:///usr/local/monospace/templates/public/blank-web","workstationAccessToken":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2Nsb3VkLmdvb2dsZS5jb20vd29ya3N0YXRpb25zIiwiYXVkIjoiZmlyZWJhc2UtZ2xjLW1lY2hhbmljcy1odG1sLTE3NTc4MjUyODQxMDcuY2x1c3Rlci1tZGd4cXZ2a2tiZnBxcmZpZ2ZpdXVndTVway5jbG91ZHdvcmtzdGF0aW9ucy5kZXYiLCJpYXQiOjE3NTc4MjgxOTQsImV4cCI6MTc1NzkxNDU5NH0.n5vTDu7K_5mkpOkBlKCnM0h9oqriolKpUAm2VlaubrVFwig85XB77XAfNeA7JV6cQhL9ZZRpNyKxuyRdRtmixRQxApsHeqHurWGy7Z6BPkBnDbtOrXa264OtGsoH4BaPnJMUOlhnAZa4Y8ZgY0MjDMIfjpT4tquI4_OwQgBerldRGLXaklXWyqXTt_pCmmaczslE2nKByk9wQ-zdaMPnns7LpPVKglSWvx7-pZKVe1bbzV3KLYfPCElth_gjSJayArWKgoUb_e-iTTtL5cDZ1xYYBEfNB0P32j1V5Afr1xDRfS6SdP-fYMxJyh1jvH_KLZnrbNAvrjhyiapg1Zmlag"}
+[debug] [2025-09-14T05:36:34.597Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-09-14T05:36:34.597Z] > authorizing via signed-in user (coutinho.gui@gmail.com)
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -32,30 +32,30 @@ You're about to initialize a Firebase project in this directory:
 [info] but for now we'll just set up a default project.
 [info] 
 [info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
-[debug] [2025-09-14T04:51:39.782Z] Checked if tokens are valid: true, expires at: 1757829048211
-[debug] [2025-09-14T04:51:39.784Z] Checked if tokens are valid: true, expires at: 1757829048211
-[debug] [2025-09-14T04:51:39.786Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
-[debug] [2025-09-14T04:51:39.786Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"glc-mecanica-web"}
-[debug] [2025-09-14T04:51:40.025Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
-[debug] [2025-09-14T04:51:40.025Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_AVAILABLE","suggestedProjectId":"glc-mecanica-web"}
-[debug] [2025-09-14T04:51:45.920Z] Checked if tokens are valid: true, expires at: 1757829048211
-[debug] [2025-09-14T04:51:45.921Z] Checked if tokens are valid: true, expires at: 1757829048211
-[debug] [2025-09-14T04:51:45.921Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
-[debug] [2025-09-14T04:51:45.921Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"glc-mecanica-web","name":"glc-mecanica-web"}
-[debug] [2025-09-14T04:51:46.024Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
-[debug] [2025-09-14T04:51:46.024Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.9168707810259342963"}
-[debug] [2025-09-14T04:51:46.026Z] Checked if tokens are valid: true, expires at: 1757829048211
-[debug] [2025-09-14T04:51:46.026Z] Checked if tokens are valid: true, expires at: 1757829048211
-[debug] [2025-09-14T04:51:46.026Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.9168707810259342963 [none]
-[debug] [2025-09-14T04:51:46.087Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.9168707810259342963 200
-[debug] [2025-09-14T04:51:46.087Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.9168707810259342963 {"name":"operations/create_project.global.9168707810259342963"}
-[debug] [2025-09-14T04:51:46.588Z] [Project Creation Poller] Retrying task index 0
-[debug] [2025-09-14T04:51:46.589Z] Checked if tokens are valid: true, expires at: 1757829048211
-[debug] [2025-09-14T04:51:46.589Z] Checked if tokens are valid: true, expires at: 1757829048211
-[debug] [2025-09-14T04:51:46.589Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.9168707810259342963 [none]
-[debug] [2025-09-14T04:51:46.635Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.9168707810259342963 200
-[debug] [2025-09-14T04:51:46.635Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.9168707810259342963 {"name":"operations/create_project.global.9168707810259342963","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":8,"message":"The project cannot be created because you have exceeded your allotted project quota.","details":[{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"description":"The project cannot be created because you have exceeded your allotted project quota."}]}]}}
-[debug] [2025-09-14T04:51:46.638Z] FirebaseError: The project cannot be created because you have exceeded your allotted project quota.
+[debug] [2025-09-14T05:36:59.569Z] Checked if tokens are valid: true, expires at: 1757831787827
+[debug] [2025-09-14T05:36:59.570Z] Checked if tokens are valid: true, expires at: 1757831787827
+[debug] [2025-09-14T05:36:59.573Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-09-14T05:36:59.573Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"glc-mecanica"}
+[debug] [2025-09-14T05:36:59.827Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-09-14T05:36:59.827Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_AVAILABLE","suggestedProjectId":"glc-mecanica"}
+[debug] [2025-09-14T05:37:01.677Z] Checked if tokens are valid: true, expires at: 1757831787827
+[debug] [2025-09-14T05:37:01.679Z] Checked if tokens are valid: true, expires at: 1757831787827
+[debug] [2025-09-14T05:37:01.680Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-09-14T05:37:01.680Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"glc-mecanica","name":"glc-mecanica"}
+[debug] [2025-09-14T05:37:01.792Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-09-14T05:37:01.792Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.8953072988732529263"}
+[debug] [2025-09-14T05:37:01.794Z] Checked if tokens are valid: true, expires at: 1757831787827
+[debug] [2025-09-14T05:37:01.794Z] Checked if tokens are valid: true, expires at: 1757831787827
+[debug] [2025-09-14T05:37:01.795Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8953072988732529263 [none]
+[debug] [2025-09-14T05:37:01.846Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8953072988732529263 200
+[debug] [2025-09-14T05:37:01.846Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8953072988732529263 {"name":"operations/create_project.global.8953072988732529263"}
+[debug] [2025-09-14T05:37:02.348Z] [Project Creation Poller] Retrying task index 0
+[debug] [2025-09-14T05:37:02.349Z] Checked if tokens are valid: true, expires at: 1757831787827
+[debug] [2025-09-14T05:37:02.349Z] Checked if tokens are valid: true, expires at: 1757831787827
+[debug] [2025-09-14T05:37:02.350Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8953072988732529263 [none]
+[debug] [2025-09-14T05:37:02.400Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8953072988732529263 200
+[debug] [2025-09-14T05:37:02.401Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8953072988732529263 {"name":"operations/create_project.global.8953072988732529263","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":8,"message":"The project cannot be created because you have exceeded your allotted project quota.","details":[{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"description":"The project cannot be created because you have exceeded your allotted project quota."}]}]}}
+[debug] [2025-09-14T05:37:02.403Z] FirebaseError: The project cannot be created because you have exceeded your allotted project quota.
     at OperationPoller.poll (/nix/store/wma3rvxxva78rqvnpja82nx5b3mclpxg-firebase-tools-14.15.2/lib/node_modules/firebase-tools/lib/operation-poller.js:24:19)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async createCloudProject (/nix/store/wma3rvxxva78rqvnpja82nx5b3mclpxg-firebase-tools-14.15.2/lib/node_modules/firebase-tools/lib/management/projects.js:215:29)
