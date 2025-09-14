@@ -1,14 +1,173 @@
-<!doctype html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLC Mecânica - Confiança e Precisão</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+
+    <header>
+        <div class="container">
+            <a href="#" class="logo-container">
+                <svg class="logo-svg" viewBox="0 0 200 60" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M190 45 C170 60, 140 60, 130 45 L 70 45" />
+                    <path d="M70 45 L 85 20 L 150 20" />
+                    <path d="M70 45 A 15 15 0 1 0 40 45" />
+                    <path d="M55 45 L 45 45" />
+                </svg>
+                <h1>GLC MECÂNICA</h1>
+            </a>
+        </div>
+    </header>
+
+    <section id="hero" class="split-hero">
+        <div class="hero-text">
+            <h2>Tecnologia e Cuidado para o seu Veículo</h2>
+            <p>Excelência em diagnóstico e manutenção automotiva. A confiança que seu carro precisa.</p>
+            <a href="#contato" class="btn">Agende seu Serviço</a>
+        </div>
+        <div class="hero-image"></div>
+    </section>
+
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre a GLC Mecânica</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Fundada por Gustavo Lucas Coutinho, um entusiasta de carros com mais de 15 anos de experiência, a GLC Mecânica nasceu do desejo de oferecer um serviço automotivo honesto, transparente e de alta qualidade em Curitiba.</p>
+                    <p>Nossa missão é cuidar do seu veículo com a mesma dedicação que teríamos com o nosso, utilizando as melhores ferramentas e peças para garantir sua segurança e tranquilidade. Na GLC, cada cliente é um parceiro.</p>
+                </div>
+                <img src="https://storage.googleapis.com/project-MDE0NDQ5NDk5MDU5ODMyNjE1NjY=/live-ask-assistant-images/f7b711e1-2384-4632-9c16-11f6d3f3f268.png" alt="Ferramentas da oficina GLC Mecânica">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <i class="fas fa-car-side"></i>
+                    <h3>Diagnóstico completo</h3>
+                    <p>Análise detalhada de todos os sistemas do seu veículo para identificar problemas com precisão.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-wrench"></i>
+                    <h3>Manutenção preventiva e corretiva</h3>
+                    <p>Serviços para manter seu carro em perfeitas condições e corrigir falhas inesperadas.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Injeção eletrônica</h3>
+                    <p>Especialistas em sistemas de injeção eletrônica para otimizar o desempenho e consumo.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Freios, suspensão e motor</h3>
+                    <p>Reparos e manutenção em componentes vitais para sua segurança e a vida útil do motor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clientes">
+        <div class="container">
+            <h2>O que nossos clientes dizem</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <p>"Atendimento nota 10 e serviço impecável. O Gustavo resolveu um problema que outras oficinas não conseguiram. Recomendo de olhos fechados!"</p>
+                    <div class="client-info">
+                        <img src="https://i.pravatar.cc/50?img=1" alt="Avatar de Ana Silva">
+                        <p>Ana Silva</p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Confiança total na GLC Mecânica. Sempre sou bem atendido, os preços são justos e o serviço é de altíssima qualidade. Meu carro está em boas mãos."</p>
+                    <div class="client-info">
+                        <img src="https://i.pravatar.cc/50?img=2" alt="Avatar de Carlos Pereira">
+                        <p>Carlos Pereira</p>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Levei meu carro para a revisão e fiquei muito satisfeita. A transparência e o profissionalismo do Gustavo fazem toda a diferença. Super indico!"</p>
+                    <div class="client-info">
+                        <img src="https://i.pravatar.cc/50?img=3" alt="Avatar de Mariana Costa">
+                        <p>Mariana Costa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="oficina">
+        <div class="container">
+            <h2>Nossa Oficina</h2>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3E%3E" alt="Foto da oficina GLC Mecânica">
+                <img src="https://images.unsplash.com/photo-1627492653308-5b6357924731?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3E%3E" alt="Foto da oficina GLC Mecânica">
+                <img src="https://images.unsplash.com/photo-1549925242-132d5a499a50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto da oficina GLC Mecânica">
+                <img src="https://images.unsplash.com/photo-1616422285623-13ff0162193c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto da oficina GLC Mecânica">
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container faq-container">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Como funciona o diagnóstico completo?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Utilizamos scanners modernos e análise técnica para verificar todos os sistemas do seu carro, da eletrônica à mecânica, identificando a origem de qualquer problema com máxima precisão.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Por que a manutenção preventiva é importante?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>A manutenção preventiva evita que pequenas falhas se tornem problemas grandes e caros. Ela garante a segurança, aumenta a vida útil do veículo e economiza seu dinheiro a longo prazo.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Vocês oferecem garantia nos serviços?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Sim, todos os nossos serviços e peças têm garantia. Nosso compromisso é com a sua total satisfação e segurança. Consulte os detalhes específicos para cada serviço.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p><strong>Endereço:</strong> Rua Ary Rolim Costa, 719 – Fazendinha Curitiba/PR – CEP 81330-180</p>
+            <p><a href="https://www.google.com/maps/place/R.+Ary+Rolim+Costa,+719+-+Fazendinha,+Curitiba+-+PR,+81330-180" target="_blank">Ver no mapa</a></p>
+            <p><strong>Telefone:</strong> (41) 99839-9144</p>
+            <p><strong>Email:</strong> glcmecanica@gmail.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 GLC Mecânica. Todos os direitos reservados.</p>
+            <p>Feito com &hearts; em Curitiba/PR</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
