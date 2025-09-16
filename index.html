@@ -20,9 +20,6 @@
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
-      <div class="cta">
-        <a class="btn" href="https://wa.me/5541998399144?text=Ol%C3%A1%20gostaria%20de%20um%20or%C3%A7amento" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
-      </div>
     </div>
   </header>
 
@@ -138,14 +135,29 @@
 
   <!-- Contato -->
   <section id="contato">
-    <div class="container">
-      <h2>Entre em Contato</h2>
-      <p><strong>Endereço:</strong> Rua Ary Rolim Costa, 719 – Fazendinha Curitiba/PR – CEP 81330-180</p>
-      <p><a href="https://www.google.com/maps/place/R.+Ary+Rolim+Costa,+719+-+Fazendinha,+Curitiba+-+PR,+81330-180" target="_blank">Ver no mapa</a></p>
-      <p><strong>Telefone:</strong> (41) 99839-9144</p>
-      <p><strong>Email:</strong> glcmecanica@gmail.com</p>
+    <div class="container contato-grid">
+      <div class="contato-col">
+        <h2>Coutinho Mecânica</h2>
+        <p>Oficina especializada em diagnóstico e manutenção automotiva.<br>Atendimento para linha leve e utilitários.</p>
+        <div class="contato-social">
+          <a href="https://wa.me/5541998399144" target="_blank" aria-label="WhatsApp"><svg width="22" height="22" fill="none" viewBox="0 0 32 32"><path fill="#25d366" d="M16 .6C7.5.6.6 7.5.6 16c0 2.8.7 5.5 2.1 7.9L0 32l8.4-2.6c2.3 1.3 4.9 2 7.6 2 8.5 0 15.4-6.9 15.4-15.4S24.5.6 16 .6zm0 28c-2.5 0-4.9-.7-7-2l-.5-.3-5 1.5 1.6-4.9-.3-.5c-1.3-2.1-2-4.6-2-7.1 0-7.6 6.2-13.8 13.8-13.8S29.8 8.4 29.8 16 23.6 28.6 16 28.6zm7.6-10.7c-.4-.2-2.5-1.2-2.9-1.3-.4-.2-.8-.2-1.1.2-.3.4-1.1 1.3-1.4 1.5-.3.2-.5.3-1 .1-.4-.2-1.5-.6-2.9-1.8-1.1-1-1.8-2.1-2-2.5-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.5-.6.2-.2.3-.5.5-.8.2-.3 0-.6 0-.8-.1-.2-1.1-2.6-1.5-3.5-.4-.9-.7-.8-1-.8h-.9c-.3 0-.8.1-1.2.6-.4.4-1.6 1.5-1.6 3.7s1.7 4.3 1.9 4.6c.2.2 3.4 5.2 8.3 7.2 1.2.5 2.1.8 2.8 1 .8.2 1.5.2 2.1.1.6-.1 2.5-1 2.8-1.9.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5z"/></svg></a>
+          <a href="https://instagram.com/glcmecanica" target="_blank" aria-label="Instagram"><svg width="22" height="22" fill="none" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#fff"/><path d="M22.5 10.5a2 2 0 0 0-2-2h-9a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-9Zm-6.5 2.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm4.25-.75a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5ZM16 13.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z" fill="#d62828"/></svg></a>
+          <a href="https://facebook.com/glcmecanica" target="_blank" aria-label="Facebook"><svg width="22" height="22" fill="none" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#fff"/><path d="M20.5 16h-2v8h-3v-8h-1.5v-3H15v-1.5c0-2.1 1.1-3.5 3.5-3.5h2v3h-2c-.3 0-.5.2-.5.5V13h2.5l-.5 3Z" fill="#1877f2"/></svg></a>
+        </div>
+      </div>
+      <div class="contato-col">
+        <h3>Contato</h3>
+        <p><span class="contato-ico">📞</span> <a href="tel:+5541998399144">(41) 99839-9144</a></p>
+        <p><span class="contato-ico">✉️</span> <a href="mailto:glcmecanica@gmail.com">glcmecanica@gmail.com</a></p>
+        <p><span class="contato-ico">📍</span> <a href="https://www.google.com/maps/place/R.+Ary+Rolim+Costa,+719+-+Fazendinha,+Curitiba+-+PR,+81330-180" target="_blank">Rua Ary Rolim Costa, 719 - Fazendinha, Curitiba/PR</a></p>
+      </div>
+      <div class="contato-col">
+        <h3>Horário de Atendimento</h3>
+        <p>Segunda a Sexta: 8h às 18h</p>
+        <p>Sábado: 8h às 12h</p>
+      </div>
       <!-- elemento de confirmação para o script -->
-      <p id="ok" style="display:none;color:var(--ok);margin-top:10px">Mensagem enviada. Em breve entraremos em contato.</p>
+      <p id="ok" style="display:none;color:var(--ok);margin-top:10px;grid-column:1/-1">Mensagem enviada. Em breve entraremos em contato.</p>
     </div>
   </section>
 
@@ -156,9 +168,10 @@
     </div>
   </footer>
 
-  <!-- Botão flutuante WhatsApp -->
-  <a href="https://wa.me/5541998399144?text=Ol%C3%A1%20gostaria%20de%20um%20or%C3%A7amento" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="white"><path d="M16 .6C7.5.6.6 7.5.6 16c0 2.8.7 5.5 2.1 7.9L0 32l8.4-2.6c2.3 1.3 4.9 2 7.6 2 8.5 0 15.4-6.9 15.4-15.4S24.5.6 16 .6zm0 28c-2.5 0-4.9-.7-7-2l-.5-.3-5 1.5 1.6-4.9-.3-.5c-1.3-2.1-2-4.6-2-7.1 0-7.6 6.2-13.8 13.8-13.8S29.8 8.4 29.8 16 23.6 28.6 16 28.6zm7.6-10.7c-.4-.2-2.5-1.2-2.9-1.3-.4-.2-.8-.2-1.1.2-.3.4-1.1 1.3-1.4 1.5-.3.2-.5.3-1 .1-.4-.2-1.5-.6-2.9-1.8-1.1-1-1.8-2.1-2-2.5-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.5-.6.2-.2.3-.5.5-.8.2-.3 0-.6 0-.8-.1-.2-1.1-2.6-1.5-3.5-.4-.9-.7-.8-1-.8h-.9c-.3 0-.8.1-1.2.6-.4.4-1.6 1.5-1.6 3.7s1.7 4.3 1.9 4.6c.2.2 3.4 5.2 8.3 7.2 1.2.5 2.1.8 2.8 1 .8.2 1.5.2 2.1.1.6-.1 2.5-1 2.8-1.9.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5z"/></svg>
+  <!-- Botão flutuante WhatsApp moderno -->
+  <a href="https://wa.me/5541998399144?text=Ol%C3%A1%20gostaria%20de%20um%20or%C3%A7amento" class="whatsapp-float pulse" target="_blank" rel="noopener" aria-label="Fale conosco no WhatsApp">
+    <span class="whatsapp-tooltip">Fale conosco no WhatsApp</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="white" aria-hidden="true"><path d="M16 .6C7.5.6.6 7.5.6 16c0 2.8.7 5.5 2.1 7.9L0 32l8.4-2.6c2.3 1.3 4.9 2 7.6 2 8.5 0 15.4-6.9 15.4-15.4S24.5.6 16 .6zm0 28c-2.5 0-4.9-.7-7-2l-.5-.3-5 1.5 1.6-4.9-.3-.5c-1.3-2.1-2-4.6-2-7.1 0-7.6 6.2-13.8 13.8-13.8S29.8 8.4 29.8 16 23.6 28.6 16 28.6zm7.6-10.7c-.4-.2-2.5-1.2-2.9-1.3-.4-.2-.8-.2-1.1.2-.3.4-1.1 1.3-1.4 1.5-.3.2-.5.3-1 .1-.4-.2-1.5-.6-2.9-1.8-1.1-1-1.8-2.1-2-2.5-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.5-.6.2-.2.3-.5.5-.8.2-.3 0-.6 0-.8-.1-.2-1.1-2.6-1.5-3.5-.4-.9-.7-.8-1-.8h-.9c-.3 0-.8.1-1.2.6-.4.4-1.6 1.5-1.6 3.7s1.7 4.3 1.9 4.6c.2.2 3.4 5.2 8.3 7.2 1.2.5 2.1.8 2.8 1 .8.2 1.5.2 2.1.1.6-.1 2.5-1 2.8-1.9.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5z"/></svg>
   </a>
 
   <script src="main.js"></script>
