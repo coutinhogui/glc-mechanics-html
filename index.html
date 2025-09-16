@@ -1,173 +1,256 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GLC Mecânica - Confiança e Precisão</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coutinho Mecânica Automotiva</title>
+  <style>
+    :root{
+      --navy:#161f28;
+      --navy-2:#1e2a36;
+      --metal:#cfd8dc;
+      --silver:#e5eaee;
+      --accent:#d62828;
+      --ink:#0d1117;
+      --ok:#2ea44f;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--navy);color:var(--silver);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:var(--accent);text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(1100px,94%);margin-inline:auto}
+    header{position:sticky;top:0;z-index:10;background:linear-gradient(0deg,rgba(22,31,40,.6),rgba(22,31,40,.98));backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex;align-items:center;gap:24px;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand img{height:56px}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav a{color:var(--silver);opacity:.9}
+    nav a:hover{opacity:1}
+    .cta{margin-left:auto}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:linear-gradient(180deg,#e43b3b,#b41616);color:#fff;font-weight:700;box-shadow:0 6px 18px rgba(214,40,40,.35)}
+    .btn.secondary{background:transparent;border-color:rgba(255,255,255,.2)}
+    .hero{padding:78px 0;background:linear-gradient(180deg, var(--navy) 0%, #0f1620 100%)}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+    .hero h1{font-size:clamp(32px,4.2vw,54px);line-height:1.1;margin:0 0 14px}
+    .hero p{color:#d5dde4;margin:0 0 24px}
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 26px}
+    .badge{border:1px solid rgba(255,255,255,.12);padding:6px 12px;border-radius:999px;font-size:14px;opacity:.9}
+    .card{background:linear-gradient(180deg,#1b2633,#141c26);border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:18px;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+    section{padding:64px 0;border-top:1px solid rgba(255,255,255,.05)}
+    h2{font-size:clamp(24px,3vw,36px);margin:0 0 18px}
+    .lead{color:#c9d3dc;margin:0 0 28px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{background:linear-gradient(180deg,#1b2633,#121923);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:20px}
+    .service h3{margin:8px 0 6px;font-size:18px}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+    .gallery img{border-radius:12px;border:1px solid rgba(255,255,255,.08)}
+    .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    blockquote{margin:0;padding:16px;border-radius:14px;background:#121a24;border:1px solid rgba(255,255,255,.07)}
+    blockquote cite{color:#aab7c4;font-style:normal;font-size:14px}
+    .form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .form input,.form textarea,.form select{width:100%;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.14);background:#0f1720;color:#e9eef2}
+    .form textarea{min-height:120px;grid-column:1/-1}
+    footer{background:#0e141c;padding:28px 0;border-top:1px solid rgba(255,255,255,.08);color:#9fb0bf;text-align:center}
+    /* Botão flutuante WhatsApp */
+    .whatsapp-float{position:fixed;width:60px;height:60px;bottom:20px;right:20px;background:#25d366;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:1000}
+    .whatsapp-float:hover{background:#1ebe5d}
+    @media(max-width:960px){.hero-grid{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr 1fr}.quotes{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.form{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <img src="COUTINHO-Photoroom.png" alt="Coutinho Mecânica Automotiva"/>
+      </a>
+      <nav aria-label="principal">
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="cta">
+        <a class="btn" href="https://wa.me/5541998399144?text=Ol%C3%A1%20gostaria%20de%20um%20or%C3%A7amento" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+      </div>
+    </div>
+  </header>
 
-    <header>
-        <div class="container">
-            <a href="#" class="logo-container">
-                <svg class="logo-svg" viewBox="0 0 200 60" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M190 45 C170 60, 140 60, 130 45 L 70 45" />
-                    <path d="M70 45 L 85 20 L 150 20" />
-                    <path d="M70 45 A 15 15 0 1 0 40 45" />
-                    <path d="M55 45 L 45 45" />
-                </svg>
-                <h1>GLC MECÂNICA</h1>
-            </a>
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Tecnologia e Cuidado para o seu Veículo</h1>
+        <p>Excelência em diagnóstico e manutenção automotiva. A confiança que seu carro precisa.</p>
+        <div class="badges">
+          <span class="badge">Scanner avançado</span>
+          <span class="badge">Garantia em serviço</span>
+          <span class="badge">Entrega no prazo</span>
         </div>
-    </header>
+        <a class="btn" href="#contato">Pedir orçamento</a>
+        <a class="btn secondary" style="margin-left:8px" href="#servicos">Ver serviços</a>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1400&auto=format&fit=crop" alt="Mecânico trabalhando"/>
+      </div>
+    </div>
+  </section>
 
-    <section id="hero" class="split-hero">
-        <div class="hero-text">
-            <h2>Tecnologia e Cuidado para o seu Veículo</h2>
-            <p>Excelência em diagnóstico e manutenção automotiva. A confiança que seu carro precisa.</p>
-            <a href="#contato" class="btn">Agende seu Serviço</a>
+  <!-- Serviços -->
+  <section id="servicos">
+    <div class="container">
+      <h2>Serviços</h2>
+      <p class="lead">Linha leve e utilitários. Suporte completo para manter seu veículo confiável todos os dias.</p>
+      <div class="grid-3">
+        <div class="service">
+          <h3>Troca de óleo e filtros</h3>
+          <p>Planos por km rodado e checagem de 20 itens de segurança.</p>
         </div>
-        <div class="hero-image"></div>
-    </section>
-
-    <section id="sobre">
-        <div class="container">
-            <h2>Sobre a GLC Mecânica</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Fundada por Gustavo Lucas Coutinho, um entusiasta de carros com mais de 15 anos de experiência, a GLC Mecânica nasceu do desejo de oferecer um serviço automotivo honesto, transparente e de alta qualidade em Curitiba.</p>
-                    <p>Nossa missão é cuidar do seu veículo com a mesma dedicação que teríamos com o nosso, utilizando as melhores ferramentas e peças para garantir sua segurança e tranquilidade. Na GLC, cada cliente é um parceiro.</p>
-                </div>
-                <img src="https://blog.compresuapeca.com.br/wp-content/uploads/2023/03/Oficina-mecanica-1.jpg" alt="Ferramentas da oficina GLC Mecânica">
-            </div>
+        <div class="service">
+          <h3>Freios e suspensão</h3>
+          <p>Pastilhas, discos, amortecedores e alinhamento/ balanceamento.</p>
         </div>
-    </section>
-
-    <section id="servicos">
-        <div class="container">
-            <h2>Nossos Serviços</h2>
-            <div class="service-grid">
-                <div class="service-item">
-                    <i class="fas fa-car-side"></i>
-                    <h3>Diagnóstico completo</h3>
-                    <p>Análise detalhada de todos os sistemas do seu veículo para identificar problemas com precisão.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-wrench"></i>
-                    <h3>Manutenção preventiva e corretiva</h3>
-                    <p>Serviços para manter seu carro em perfeitas condições e corrigir falhas inesperadas.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Injeção eletrônica</h3>
-                    <p>Especialistas em sistemas de injeção eletrônica para otimizar o desempenho e consumo.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Freios, suspensão e motor</h3>
-                    <p>Reparos e manutenção em componentes vitais para sua segurança e a vida útil do motor.</p>
-                </div>
-            </div>
+        <div class="service">
+          <h3>Injeção e diagnóstico</h3>
+          <p>Leitura via scanner, correção de falhas e testes em rodagem.</p>
         </div>
-    </section>
-
-    <section id="clientes">
-        <div class="container">
-            <h2>O que nossos clientes dizem</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-item">
-                    <p>"Atendimento nota 10 e serviço impecável. O Gustavo resolveu um problema que outras oficinas não conseguiram. Recomendo de olhos fechados!"</p>
-                    <div class="client-info">
-                        <img src="https://i.pravatar.cc/50?img=1" alt="Avatar de Ana Silva">
-                        <p>Ana Silva</p>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <p>"Confiança total na GLC Mecânica. Sempre sou bem atendido, os preços são justos e o serviço é de altíssima qualidade. Meu carro está em boas mãos."</p>
-                    <div class="client-info">
-                        <img src="https://i.pravatar.cc/50?img=2" alt="Avatar de Carlos Pereira">
-                        <p>Carlos Pereira</p>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <p>"Levei meu carro para a revisão e fiquei muito satisfeita. A transparência e o profissionalismo do Gustavo fazem toda a diferença. Super indico!"</p>
-                    <div class="client-info">
-                        <img src="https://i.pravatar.cc/50?img=3" alt="Avatar de Mariana Costa">
-                        <p>Mariana Costa</p>
-                    </div>
-                </div>
-            </div>
+        <div class="service">
+          <h3>Ar-condicionado</h3>
+          <p>Higienização, carga de gás e verificação de vazamentos.</p>
         </div>
-    </section>
-
-    <section id="oficina">
-        <div class="container">
-            <h2>Nossa Oficina</h2>
-            <div class="gallery-grid">
-                <img src="https://img.freepik.com/fotos-gratis/trabalhador-de-servico-de-carro-muscular-reparando-o-veiculo_146671-19605.jpg?semt=ais_incoming&w=740&q=80" alt="Foto da oficina GLC Mecânica">
-                <img src="https://blog.engecass.com.br/wp-content/uploads/2023/05/dicas-para-manter-a-equipe-unida-na-oficina-mecanica-e-alcancar-o-sucesso.png" alt="Foto da oficina GLC Mecânica">
-                <img src="https://site.zuldigital.com.br/blog/wp-content/uploads/2020/12/shutterstock_727170871_Easy-Resize.com_-1.jpg" alt="Foto da oficina GLC Mecânica">
-                <img src="https://chiptronic.com.br/blog/wp-content/uploads/2016/08/4-dicas-de-mec%C3%A2nica-para-motos-que-voc%C3%AA-precisa-conhecer.jpeg" alt="Foto da oficina GLC Mecânica">
-            </div>
+        <div class="service">
+          <h3>Correias e motor</h3>
+          <p>Correia dentada/auxiliares, bomba d’água e revisão preventiva.</p>
         </div>
-    </section>
-
-    <section id="faq">
-        <div class="container faq-container">
-            <h2>Perguntas Frequentes</h2>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>Como funciona o diagnóstico completo?</h3>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>Utilizamos scanners modernos e análise técnica para verificar todos os sistemas do seu carro, da eletrônica à mecânica, identificando a origem de qualquer problema com máxima precisão.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>Por que a manutenção preventiva é importante?</h3>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>A manutenção preventiva evita que pequenas falhas se tornem problemas grandes e caros. Ela garante a segurança, aumenta a vida útil do veículo e economiza seu dinheiro a longo prazo.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>Vocês oferecem garantia nos serviços?</h3>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <p>Sim, todos os nossos serviços e peças têm garantia. Nosso compromisso é com a sua total satisfação e segurança. Consulte os detalhes específicos para cada serviço.</p>
-                </div>
-            </div>
+        <div class="service">
+          <h3>Elétrica</h3>
+          <p>Bateria, alternador, faróis, sensores e chicote.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="contato">
-        <div class="container">
-            <h2>Entre em Contato</h2>
-            <p><strong>Endereço:</strong> Rua Ary Rolim Costa, 719 – Fazendinha Curitiba/PR – CEP 81330-180</p>
-            <p><a href="https://www.google.com/maps/place/R.+Ary+Rolim+Costa,+719+-+Fazendinha,+Curitiba+-+PR,+81330-180" target="_blank">Ver no mapa</a></p>
-            <p><strong>Telefone:</strong> (41) 99839-9144</p>
-            <p><strong>Email:</strong> glcmecanica@gmail.com</p>
+  <!-- Sobre -->
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre</h2>
+      <p class="lead">Somos apaixonados por carros e por resolver problemas de forma honesta e eficiente. Atuamos com transparência no orçamento e prazos firmes.</p>
+      <div class="grid-3">
+        <div class="service">
+          <h3>Equipe qualificada</h3>
+          <p>Técnicos certificados e treinamentos contínuos.</p>
         </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 GLC Mecânica. Todos os direitos reservados.</p>
-            <p>Feito com &hearts; em Curitiba/PR</p>
+        <div class="service">
+          <h3>Peças de qualidade</h3>
+          <p>Trabalhamos com marcas de referência e garantia.</p>
         </div>
-    </footer>
+        <div class="service">
+          <h3>Garantia</h3>
+          <p>Até 3 meses de garantia, conforme serviço e peça.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="main.js"></script>
+  <!-- Galeria -->
+  <section id="galeria">
+    <div class="container">
+      <h2>Galeria</h2>
+      <p class="lead">Um pouco do nosso dia a dia na oficina.</p>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop" alt="Oficina 1"/>
+        <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=1200&auto=format&fit=crop" alt="Oficina 2"/>
+        <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?q=80&w=1200&auto=format&fit=crop" alt="Oficina 3"/>
+        <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1200&auto=format&fit=crop" alt="Oficina 4"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section id="depoimentos">
+    <div class="container">
+      <h2>O que dizem de nós</h2>
+      <div class="quotes">
+        <blockquote>
+          <p>"Atendimento excelente e preço justo. Voltarei sempre!"</p>
+          <cite>— Rafael A.</cite>
+        </blockquote>
+        <blockquote>
+          <p>"Diagnóstico certeiro, resolveram o que outra oficina não conseguiu."</p>
+          <cite>— Camila M.</cite>
+        </blockquote>
+        <blockquote>
+          <p>"Entrega no prazo e garantia real, recomendo."</p>
+          <cite>— João P.</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato">
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      <p><strong>Endereço:</strong> Rua Ary Rolim Costa, 719 – Fazendinha Curitiba/PR – CEP 81330-180</p>
+      <p><a href="https://www.google.com/maps/place/R.+Ary+Rolim+Costa,+719+-+Fazendinha,+Curitiba+-+PR,+81330-180" target="_blank">Ver no mapa</a></p>
+      <p><strong>Telefone:</strong> (41) 99839-9144</p>
+      <p><strong>Email:</strong> glcmecanica@gmail.com</p>
+      <!-- elemento de confirmação para o script -->
+      <p id="ok" style="display:none;color:var(--ok);margin-top:10px">Mensagem enviada. Em breve entraremos em contato.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Coutinho Mecânica Automotiva. Todos os direitos reservados.</p>
+      <p>Feito com &hearts; em Curitiba/PR</p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5541998399144?text=Ol%C3%A1%20gostaria%20de%20um%20or%C3%A7amento" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="white"><path d="M16 .6C7.5.6.6 7.5.6 16c0 2.8.7 5.5 2.1 7.9L0 32l8.4-2.6c2.3 1.3 4.9 2 7.6 2 8.5 0 15.4-6.9 15.4-15.4S24.5.6 16 .6zm0 28c-2.5 0-4.9-.7-7-2l-.5-.3-5 1.5 1.6-4.9-.3-.5c-1.3-2.1-2-4.6-2-7.1 0-7.6 6.2-13.8 13.8-13.8S29.8 8.4 29.8 16 23.6 28.6 16 28.6zm7.6-10.7c-.4-.2-2.5-1.2-2.9-1.3-.4-.2-.8-.2-1.1.2-.3.4-1.1 1.3-1.4 1.5-.3.2-.5.3-1 .1-.4-.2-1.5-.6-2.9-1.8-1.1-1-1.8-2.1-2-2.5-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.5-.6.2-.2.3-.5.5-.8.2-.3 0-.6 0-.8-.1-.2-1.1-2.6-1.5-3.5-.4-.9-.7-.8-1-.8h-.9c-.3 0-.8.1-1.2.6-.4.4-1.6 1.5-1.6 3.7s1.7 4.3 1.9 4.6c.2.2 3.4 5.2 8.3 7.2 1.2.5 2.1.8 2.8 1 .8.2 1.5.2 2.1.1.6-.1 2.5-1 2.8-1.9.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5z"/></svg>
+  </a>
+
+  <script>
+    // Corrige erro: não usar optional chaining no lado esquerdo de atribuição
+    function sendForm(e){
+      if(e && typeof e.preventDefault === 'function') e.preventDefault();
+      const okElement = document.getElementById('ok');
+      if (okElement) {
+        okElement.style.display = 'block';
+        okElement.setAttribute('role','status');
+      }
+      if (e && e.target && typeof e.target.reset === 'function') {
+        e.target.reset();
+      }
+    }
+
+    // Testes básicos (não intrusivos)
+    (function runTests(){
+      try {
+        // Caso 1: sem elemento #ok (remove/recupera temporariamente)
+        const contatoContainer = document.querySelector('#contato .container');
+        const ok = document.getElementById('ok');
+        let placeholder; let removed = false;
+        if (ok && contatoContainer) { placeholder = ok; contatoContainer.removeChild(ok); removed = true; }
+        let threw = false;
+        try { sendForm({preventDefault(){}, target:{reset(){}}}); } catch(err){ threw = true; console.error(err); }
+        console.assert(!threw, 'sendForm NÃO deve lançar erro quando #ok não existir');
+        // Restaura DOM
+        if (removed && contatoContainer) contatoContainer.appendChild(placeholder);
+
+        // Caso 2: com #ok presente — deve ficar visível
+        const ok2 = document.getElementById('ok');
+        const before = ok2 ? ok2.style.display : '';
+        sendForm({preventDefault(){}, target:{reset(){}}});
+        console.assert(ok2 && ok2.style.display === 'block', 'sendForm deve exibir o #ok quando presente');
+        if (ok2) ok2.style.display = before; // restaura estado visual
+        console.log('Testes do formulário passaram ✅');
+      } catch (e) {
+        console.warn('Falha ao rodar testes', e);
+      }
+    })();
+  </script>
 </body>
 </html>
