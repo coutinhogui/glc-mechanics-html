@@ -1,6 +1,7 @@
 /* Efeito hover sutil e elegante para elementos interativos */
 .btn, .btn.secondary, .badge, .service, .card, .gallery img, .contato-social a, .whatsapp-float, .brand, nav a {
   transition: box-shadow 0.18s cubic-bezier(.4,0,.2,1), transform 0.18s cubic-bezier(.4,0,.2,1), filter 0.18s;
+}
 .btn:hover, .btn:focus {
   box-shadow: 0 6px 24px rgba(214,40,40,0.18), 0 1.5px 0 rgba(255,255,255,0.04) inset;
   transform: translateY(-2px) scale(1.03);
@@ -76,11 +77,14 @@ nav a:hover, nav a:focus {
 .contato-grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr;
-  gap: var(--contato-gap, 36px);
-  padding: var(--contato-padding, 38px 28px 28px 28px);
+  gap: 36px;
+  padding: 38px 28px 28px 28px;
   margin-top: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
   color: var(--silver);
+  align-items: flex-start;
+  background: none;
+  border-radius: 0;
 }
 .contato-col h2, .contato-col h3 {
   margin-top: 0;
@@ -104,12 +108,12 @@ nav a:hover, nav a:focus {
 .contato-social {
   margin-top: 12px;
 }
-}
   
 .contato-social a:hover, .contato-social a:focus {
   box-shadow: 0 6px 18px 0 rgba(40,40,60,0.13);
   transform: translateY(-2px) scale(1.07);
   outline: none;
+}
 .contato-social a {
   display: inline-flex;
   align-items: center;
@@ -126,7 +130,6 @@ nav a:hover, nav a:focus {
 }
 .contato-social a:last-child {
   margin-right: 0;
-}
 }
 .contato-social svg {
   width: 24px;
