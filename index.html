@@ -12,7 +12,10 @@
       <a class="brand" href="#home">
         <img src="COUTINHO-Photoroom.png" alt="Coutinho Mecânica Automotiva"/>
       </a>
-      <nav aria-label="principal">
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="principal" id="main-menu">
         <ul>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#sobre">Sobre</a></li>
@@ -181,5 +184,15 @@
   </a>
 
   <script src="main.js"></script>
+<script>
+// Menu hamburguer responsivo
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.getElementById('main-menu');
+menuToggle.addEventListener('click', function() {
+  nav.classList.toggle('open');
+  menuToggle.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', nav.classList.contains('open'));
+});
+</script>
 </body>
 </html>
