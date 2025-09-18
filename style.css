@@ -285,7 +285,7 @@ nav a:hover, nav a:focus {
   }
 }
 :root{
-  --navy:#161f28;
+  --navy:#181d23;
   --navy-2:#1e2a36;
   --metal:#cfd8dc;
   --silver:#e5eaee;
@@ -295,6 +295,8 @@ nav a:hover, nav a:focus {
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:var(--navy);color:var(--silver);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+body.alt-bg{background:#23272b!important;}
+body.grad-bg{background:linear-gradient(180deg,#181d23 0%,#23272b 100%)!important;}
 a{color:var(--accent);text-decoration:none}
 img{max-width:100%;display:block}
 .container{width:min(1100px,94%);margin-inline:auto}
